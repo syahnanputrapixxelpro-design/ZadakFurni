@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Inspirasi Furnitur | ZadakFurni</title>
+    <meta name="description"
+        content="Temukan tips perawatan furnitur, tren interior 2026, dan ide dekorasi rumah minimalis di blog ZadakFurni. Inspirasi hunian mewah untuk Anda.">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://zadakfurni.com/blog.html">
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#5B7B9C">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zadakfurni.com/blog.html">
+    <meta property="og:title" content="Blog & Inspirasi Furnitur | ZadakFurni">
+    <meta property="og:description"
+        content="Kumpulan artikel menarik seputar desain interior dan furnitur berkualitas.">
+    <meta property="og:image" content="assets/kursi kerja.webp">
+
+    <!-- Structured Data for SEO & AI Overview -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog ZadakFurni",
+      "description": "Tips, trik, dan tren terbaru seputar desain interior dan furnitur.",
+      "url": "https://zadakfurni.com/blog.html"
+    }
+    </script>
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Critical Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <!-- Essential Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <style>
+        /* --- CORE STYLES --- */
+        :root {
+            --primary-bg: #F9F5F0;
+            --accent-blue: #5B7B9C;
+            --accent-gold: #D29D52;
+            --text-dark: #2D2A26;
+            --text-muted: #6B6661;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- NAVBAR --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: transparent;
+            transition: all 0.4s ease;
+        }
+
+        nav.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 1rem 5%;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-style: italic;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+            z-index: 1001;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-blue);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* --- FLOATING BUTTONS --- */
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .float-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .float-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        .wa-btn {
+            background-color: #25D366;
+        }
+
+        .back-top-btn {
+            background-color: var(--accent-blue);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* --- BLOG HERO --- */
+        .blog-hero {
+            padding: 10rem 5% 4rem;
+            text-align: center;
+            background: linear-gradient(to bottom, #F9F5F0 0%, #fff 100%);
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .blog-hero p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- SEARCH BAR --- */
+        /* --- SEARCH BAR UPDATE --- */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 5rem;
+            /* Update di sini: Menambahkan padding top 3rem */
+            padding: 3rem 5% 0;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.2rem 2rem;
+            padding-right: 3.5rem;
+            border-radius: 50px;
+            border: 1px solid #ddd;
+            background-color: var(--white);
+            font-size: 1rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(91, 123, 156, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: calc(5% + 1.5rem);
+            top: calc(50% + 1.5rem);
+            /* Disesuaikan karena ada padding top */
+            transform: translateY(-50%);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+
+        /* --- BLOG GRID --- */
+        .blog-section {
+            padding: 0 5% 8rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .blog-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .blog-img img {
+            transform: scale(1.1);
+        }
+
+        .blog-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+
+        .blog-excerpt {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex: 1;
+            /* Pushes button down */
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: var(--accent-blue);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            gap: 0.8rem;
+            color: var(--text-dark);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #EEDCC6;
+            padding: 6rem 5% 3rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr repeat(4, 1fr);
+            gap: 3rem;
+            max-width: 1300px;
+            margin: 0 auto 5rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col.brand .logo {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .footer-col.brand p {
+            max-width: 300px;
+            color: var(--text-dark);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: var(--text-dark);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+            padding-left: 5px;
+            color: var(--accent-blue);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 2rem 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-col.brand {
+                grid-column: span 2;
+            }
+
+            .search-container {
+                padding: 0 5%;
+            }
+
+            .search-icon {
+                right: calc(5% + 1.2rem);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-col.brand {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="index.html" class="logo">ZadakFurni</a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="floating-container">
+        <button class="float-btn back-top-btn" id="backTopBtn" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/62895639068080" target="_blank" class="float-btn wa-btn" title="Chat WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <header class="blog-hero">
+        <h1>Artikel & Berita Terbaru</h1>
+        <p>Inspirasi desain interior, tips perawatan furnitur, dan tren gaya hidup modern.</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" id="blogSearch" placeholder="Cari artikel (misal: Tips, Sofa, Kayu)...">
+        <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <section class="blog-section">
+        <div class="blog-grid" id="blogGrid">
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/kursi kerja.webp" alt="Tips Memilih Sofa untuk Ruang Tamu Kecil" width="400"
+                        height="250" loading="lazy" decoding="async">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-meta">Tips & Trik • 25 Jan 2026</span>
+                    <h3 class="blog-title">5 Cara Cerdas Memilih Sofa untuk Ruang Tamu Kecil</h3>
+                    <p class="blog-excerpt">Memiliki ruang tamu minimalis bukan berarti tidak bisa tampil mewah. Simak
+                        tips memilih ukuran dan warna sofa yang tepat agar ruangan terasa luas.</p>
+                    <a href="tips-memilih-sofa-untuk-ruang-tamu-kecil.html" class="read-more">Baca Selengkapnya <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/kursi 2.webp" alt="Tren Warna Interior 2026" width="400" height="250"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-meta">Tren Desain • 10 Jan 2026</span>
+                    <h3 class="blog-title">Prediksi Tren Warna Interior Paling Hits di Tahun 2026</h3>
+                    <p class="blog-excerpt">Tahun ini didominasi oleh warna-warna earth tone yang menenangkan. Pelajari
+                        bagaimana mengombinasikan warna 'Sage Green' dan 'Terracotta'.</p>
+                    <a href="warna-cat-tembok-terbaru-2026.html" class="read-more">Baca Selengkapnya <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/sofa-bludru.webp" alt="Tips Merawat Furnitur Kayu Jati" width="400" height="250"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-meta">Edukasi • 02 Jan 2026</span>
+                    <h3 class="blog-title">Rahasia Merawat Furnitur Kayu Jati Agar Tahan Puluhan Tahun</h3>
+                    <p class="blog-excerpt">Kayu jati adalah investasi. Jangan sampai salah perawatan! Hindari sinar
+                        matahari langsung dan gunakan minyak khusus secara berkala.</p>
+                    <a href="cara-merawat-meja-kursi-jati-anti-rayap.html" class="read-more">Baca Selengkapnya <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="noResults" style="display: none; text-align: center; color: var(--text-muted); margin-top: 2rem;">
+            <p>Maaf, artikel yang Anda cari tidak ditemukan.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="logo">ZadakFurni</h4>
+                <p>Selama bertahun-tahun kami selalu menjadi yang teratas dalam industri furnitur di seluruh dunia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Info Lain</h4>
+                <ul>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Lisensi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Media</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Galeri Foto</a></li>
+                    <li><a href="#">Berita Terbaru</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Layanan</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sosial Media</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZadakFurni. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. HAMBURGER MENU
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // 2. STICKY NAVBAR & BACK TO TOP
+        const navbar = document.getElementById('navbar');
+        const backTopBtn = document.getElementById('backTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 300) {
+                backTopBtn.classList.add('show');
+            } else {
+                backTopBtn.classList.remove('show');
+            }
+        });
+
+        backTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 3. SEARCH BLOG FUNCTIONALITY
+        const searchInput = document.getElementById('blogSearch');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const noResultsMsg = document.getElementById('noResults');
+
+        searchInput.addEventListener('keyup', (e) => {
+            const term = e.target.value.toLowerCase();
+            let hasResult = false;
+
+            blogCards.forEach(card => {
+                const title = card.querySelector('.blog-title').innerText.toLowerCase();
+                const excerpt = card.querySelector('.blog-excerpt').innerText.toLowerCase();
+                const meta = card.querySelector('.blog-meta').innerText.toLowerCase();
+
+                // Cek apakah judul, isi singkat, atau kategori mengandung kata kunci
+                if (title.includes(term) || excerpt.includes(term) || meta.includes(term)) {
+                    card.style.display = 'flex'; // Tampilkan
+                    hasResult = true;
+
+                    // Animasi masuk
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+
+                } else {
+                    card.style.display = 'none'; // Sembunyikan
+                }
+            });
+
+            // Tampilkan pesan jika tidak ada hasil
+            if (hasResult) {
+                noResultsMsg.style.display = 'none';
+            } else {
+                noResultsMsg.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
