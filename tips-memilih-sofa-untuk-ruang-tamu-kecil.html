@@ -361,6 +361,26 @@
             padding-left: 5px;
         }
 
+        /* GIF Banner Link */
+        .gif-banner-link {
+            display: block;
+            width: 100%;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gif-banner-link:hover {
+            transform: scale(1.02);
+        }
+
+        .gif-banner-link img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* --- CONTENT STYLING --- */
         /* Indentasi untuk H3 */
         .toc-sub-item {
             margin-left: 1.5rem;
@@ -746,17 +766,17 @@
         </header>
 
         <figure class="main-image-wrapper">
-            <img src="assets/kursi kerja.webp" alt="Ilustrasi sofa minimalis di ruang tamu kecil" width="800"
-                height="500" fetchpriority="high">
-            <figcaption>Sofa minimalis dengan kaki terekspos membuat ruangan terasa lebih lega.</figcaption>
+            <img src="img/art1.png" alt="Tips Memilih Sofa Ruang Tamu Kecil" width="800" height="500"
+                fetchpriority="high" onerror="this.src='assets/kursi kerja.webp'">
+            <figcaption>Pilih sofa dengan ukuran proporsional untuk menghemat ruang.</figcaption>
         </figure>
 
         <div class="toc-box">
             <div class="toc-header" id="tocToggle">
-                <span class="toc-title">Daftar Isi</span>
+                <span class="toc-title">Daftar Isi (Klik untuk melihat)</span>
                 <i class="fas fa-chevron-down toc-toggle"></i>
             </div>
-            <ul class="toc-list" id="tocList">
+            <ul class="toc-list hidden" id="tocList">
             </ul>
         </div>
 
@@ -804,8 +824,8 @@
             </blockquote>
 
             <figure>
-                <img src="assets/featured_chair_2.webp" alt="Detail kaki sofa kayu ZadakFurni" width="600" height="400"
-                    loading="lazy" decoding="async">
+                <img src="img/1art.png" alt="Detail kaki sofa kayu ZadakFurni" width="600" height="400" loading="lazy"
+                    decoding="async" onerror="this.src='assets/featured_chair_2.webp'">
                 <figcaption>Kaki sofa yang ramping memberikan kesan 'airy' atau lapang.</figcaption>
             </figure>
 
@@ -815,12 +835,22 @@
 
             <div class="read-also">
                 <span>Baca Juga:</span>
-                <a href="#">Rahasia Merawat Furnitur Kayu Jati Agar Tahan Puluhan Tahun</a>
+                <a href="pentingnya-riset-pasar-bisnis-furnitur.html">Pentingnya Riset Pasar Sebelum Memulai Bisnis
+                    Furnitur</a>
             </div>
 
             <h2>5. Proporsi adalah Kunci</h2>
             <p>Hindari sofa dengan lengan yang terlalu tebal (rolled arms) atau sandaran punggung yang terlalu tinggi
                 dan tebal. Pilihlah desain <em>sleek</em>, lengan lurus, dan sandaran yang proporsional.</p>
+
+            <h2>Kesimpulan</h2>
+            <p>Memilih sofa untuk ruang tamu kecil memang membutuhkan strategi. Dengan memperhatikan ukuran, fungsi
+                ganda, desain kaki, warna, dan proporsi, Anda bisa menciptakan ruang tamu yang tidak hanya nyaman tapi
+                juga terlihat luas dan <em>stylish</em>.</p>
+
+            <a href="https://wa.me/62895639068080" target="_blank" class="gif-banner-link">
+                <img src="https://media.giphy.com/media/26tn33ai01UfGWeso/giphy.gif" alt="Promo Spesial ZadakFurni">
+            </a>
 
             <div class="faq-section">
                 <h3>Pertanyaan Umum (FAQ)</h3>
@@ -836,31 +866,6 @@
                 </div>
             </div>
 
-            <h2>Kesimpulan</h2>
-            <p>Memilih sofa untuk ruang tamu kecil memang membutuhkan strategi. Dengan memperhatikan ukuran, fungsi
-                ganda, desain kaki, warna, dan proporsi, Anda bisa menciptakan ruang tamu yang tidak hanya nyaman tapi
-                juga terlihat luas dan <em>stylish</em>.</p>
-            <p>Siap mencari sofa impian Anda? Cek koleksi terbaru ZadakFurni sekarang!</p>
-
-            <div class="promo-banner">
-                <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Promo Gratis Ongkir"
-                    style="width: 100%; height: 200px; object-fit: cover;">
-            </div>
-
-        </div>
-
-        <div class="share-section">
-            <span class="share-title">Bagikan artikel ini:</span>
-            <div class="share-icons">
-                <a href="https://wa.me/62895639068080?text=Cek%20artikel%20keren%20ini%20tentang%20tips%20memilih%20sofa!%20"
-                    target="_blank" class="share-link bg-wa"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="share-link bg-fb"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/intent/tweet?text=Tips%20Memilih%20Sofa&url=#" target="_blank"
-                    class="share-link bg-tw"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=#" target="_blank"
-                    class="share-link bg-li"><i class="fab fa-linkedin-in"></i></a>
-            </div>
         </div>
 
         <div class="author-box">
@@ -870,6 +875,20 @@
                 <h4>Tentang Penulis: Budi Santoso</h4>
                 <p>Budi adalah Senior Interior Designer di ZadakFurni dengan pengalaman lebih dari 10 tahun. Ia gemar
                     membagikan tips menata ruang hunian yang fungsional dan estetis.</p>
+            </div>
+        </div>
+
+        <div class="share-section">
+            <span class="share-title">Bagikan artikel ini:</span>
+            <div class="share-icons">
+                <a href="https://wa.me/62895639068080?text=Cek artikel menarik ini: https://zadakfurni.com/tips-memilih-sofa-untuk-ruang-tamu-kecil.html"
+                    target="_blank" class="share-link bg-wa"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://zadakfurni.com/tips-memilih-sofa-untuk-ruang-tamu-kecil.html"
+                    target="_blank" class="share-link bg-fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/intent/tweet?text=5 Cara Cerdas Memilih Sofa untuk Ruang Tamu Kecil&url=https://zadakfurni.com/tips-memilih-sofa-untuk-ruang-tamu-kecil.html"
+                    target="_blank" class="share-link bg-tw"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zadakfurni.com/tips-memilih-sofa-untuk-ruang-tamu-kecil.html"
+                    target="_blank" class="share-link bg-li"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 

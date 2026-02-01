@@ -83,6 +83,25 @@
             --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
+        /* GIF Banner Link */
+        .gif-banner-link {
+            display: block;
+            width: 100%;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gif-banner-link:hover {
+            transform: scale(1.02);
+        }
+
+        .gif-banner-link img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -722,18 +741,17 @@
         </header>
 
         <figure class="main-image-wrapper">
-            <img src="assets/sofa-bludru.webp" alt="Ilustrasi sofa beludru mewah di showroom furnitur" width="800"
-                height="500" fetchpriority="high">
-            <figcaption>Jangan terjebak stok mati: Sofa beludru mewah mungkin indah, tapi belum tentu laku tanpa riset
-                pasar yang tepat.</figcaption>
+            <img src="img/art2.png" alt="Riset Pasar Bisnis Furnitur" width="800" height="500" fetchpriority="high"
+                onerror="this.src='assets/sofa-bludru.webp'">
+            <figcaption>Riset pasar mendalam adalah fondasi bisnis furnitur yang sukses.</figcaption>
         </figure>
 
         <div class="toc-box">
             <div class="toc-header" id="tocToggle">
-                <span class="toc-title">Daftar Isi</span>
+                <span class="toc-title">Daftar Isi (Klik untuk melihat)</span>
                 <i class="fas fa-chevron-down toc-toggle"></i>
             </div>
-            <ul class="toc-list" id="tocList">
+            <ul class="toc-list hidden" id="tocList">
             </ul>
         </div>
 
@@ -752,7 +770,8 @@
 
             <div class="read-also">
                 <span>Baca Juga:</span>
-                <a href="#">Cara Memulai Bisnis Furnitur dari Nol: Panduan Lengkap 2026</a>
+                <a href="tragedi-showroom-sepi-bisnis-furnitur.html">Tragedi Showroom Sepi: Mengapa Visual Saja Tidak
+                    Cukup?</a>
             </div>
 
             <h2>Apa Sebenarnya yang Dimaksud dengan Riset Pasar Digital?</h2>
@@ -807,26 +826,59 @@
             <h2>Meminimalkan Risiko Stok "Mati"</h2>
             <p>Dunia furnitur adalah bisnis tentang volume dan ruang. Setiap inci barang yang tidak laku di gudangmu
                 adalah biaya. Dengan riset digital, kamu bisa melakukan validasi ide produk sebelum produksi massal.
-                Kamu bisa mencoba memasang iklan teaser di media sosial untuk melihat berapa banyak orang yang tertarik.
-                Jika responnya dingin, kamu belum rugi besar. Kamu tinggal putar arah dan mencari desain lain yang lebih
-                diminati.</p>
-
             <blockquote>
-                "Ingat, lebih baik gagal di tahap riset daripada bangkrut di tahap operasional."
+                "Data tidak pernah berbohong. Idealismu mungkin mengatakan ini bagus, tapi angka di layar akan memberi
+                tahu apakah orang benar-benar mau membelinya."
             </blockquote>
+
+            <figure>
+                <img src="img/2art.png" alt="Analisis Data Digital" width="600" height="400" loading="lazy"
+                    decoding="async" onerror="this.src='assets/sofa 1.webp'">
+                <figcaption>Contoh visualisasi tren furnitur melalui data pencarian digital.</figcaption>
+            </figure>
+
+            <div class="read-also">
+                <span>Baca Juga:</span>
+                <a href="strategi-psikologi-pasar-bisnis-furnitur.html">Membedah Psikologi Pasar Furnitur
+                    Menengah-Atas</a>
+            </div>
+
+            <h2>Kesimpulan</h2>
+            <p>Riset pasar digital adalah langkah pertama yang tidak boleh dilewatkan. Dengan memahami kebutuhan riil,
+                preferensi estetika, dan daya beli konsumen melalui data, Anda dapat meminimalkan risiko kerugian dan
+                membangun bisnis furnitur yang berkelanjutan di era modern ini.</p>
+
+            <a href="https://wa.me/62895639068080" target="_blank" class="gif-banner-link">
+                <img src="https://media.giphy.com/media/26tn33ai01UfGWeso/giphy.gif" alt="Konsultasi Bisnis ZadakFurni">
+            </a>
+
+            <div class="faq-section">
+                <h3>Pertanyaan Umum (FAQ)</h3>
+                <div class="faq-item">
+                    <span class="faq-question">Berapa lama waktu yang dibutuhkan untuk riset pasar?</span>
+                    <p>Idealnya minimal 2-4 minggu untuk mendapatkan data yang cukup representatif sebelum melakukan
+                        produksi massal.</p>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">Apakah riset digital sudah cukup akurat?</span>
+                    <p>Sangat akurat untuk memetakan minat pencarian, namun tetap disarankan melakukan validasi fisik
+                        jika memungkinkan.</p>
+                </div>
+            </div>
+
         </div>
 
         <div class="share-section">
             <span class="share-title">Bagikan artikel ini:</span>
             <div class="share-icons">
-                <a href="https://wa.me/62895639068080?text=Cek%20artikel%20keren%20ini%20tentang%20tips%20memilih%20sofa!%20"
+                <a href="https://wa.me/62895639068080?text=Cek artikel bisnis furnitur: https://zadakfurni.com/pentingnya-riset-pasar-bisnis-furnitur.html"
                     target="_blank" class="share-link bg-wa"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=#" target="_blank" class="share-link bg-fb"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/intent/tweet?text=Tips%20Memilih%20Sofa&url=#" target="_blank"
-                    class="share-link bg-tw"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=#" target="_blank"
-                    class="share-link bg-li"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://zadakfurni.com/pentingnya-riset-pasar-bisnis-furnitur.html"
+                    target="_blank" class="share-link bg-fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/intent/tweet?text=Riset Pasar Bisnis Furnitur: Penting!&url=https://zadakfurni.com/pentingnya-riset-pasar-bisnis-furnitur.html"
+                    target="_blank" class="share-link bg-tw"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zadakfurni.com/pentingnya-riset-pasar-bisnis-furnitur.html"
+                    target="_blank" class="share-link bg-li"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -835,8 +887,8 @@
                 class="author-pic">
             <div class="author-info">
                 <h4>Tentang Penulis: Budi Santoso</h4>
-                <p>Budi adalah Senior Interior Designer di ZadakFurni dengan pengalaman lebih dari 10 tahun. Ia gemar
-                    membagikan tips menata ruang hunian yang fungsional dan estetis.</p>
+                <p>Budi adalah Senior Interior Designer di ZadakFurni yang juga aktif mendalami strategi bisnis furnitur
+                    berbasis data.</p>
             </div>
         </div>
 
